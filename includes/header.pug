@@ -1,0 +1,59 @@
+section.header
+    .header__logo.header-logo
+        img(src="images/logo.svg", alt="logo")
+    .header__content.header-content
+        header.header-content__top.header-content-top
+            ul.header-content-top__list.header-content-top-list
+                each  item in ['Каталог инструментов','Все для сада','Ручной интрумент','Электрика','Доставка','Оплата','О нас']
+                    li.header-content-top-list__item.header-content-top-list-item
+                        a(href="#").header-content-top-list-item__link
+                            =item
+            .header-content-top__auth.header-content-top-auth
+                a(href="#").header-content-top-auth__login Вход
+                span.header-content-top-auth__line
+                a(href="#").header-content-top-auth__registration Регистрация
+        .header-content__wrapper.header-content-wrapper
+            .header-content-wrapper-ls
+                .header-content-wrapper__banner
+                    a(href="#")
+                        img(src="https://dummyimage.com/253x70/e2e2e2/e2e2e2", alt="Banner")
+                .header-content-wrapper__cart.header-content-wrapper-cart
+                    -   
+                        var dataList = [
+                            {
+                                text: '3 шт. / 17 250 р.',
+                                path: 'images/cart.svg'
+                            },
+                            {
+                                text: 'Избранное (7)',
+                                path: 'images/star.svg'
+                            },
+                            {
+                                text: 'К сравнению (5)',
+                                path: 'images/balance.svg'
+                            }
+                        ]
+                    ul.header-content-wrapper-cart-list
+                        each item in dataList
+                            li.header-content-wrapper-cart-list__item.header-content-wrapper-cart-list-item
+                                img(src= item.path, alt= item.text)
+                                span.header-content-wrapper-cart-list-item__text= item.text
+                    
+                    ul.header-content-wrapper-cart-icons
+                        each icon in ['images/tools/1.png','images/tools/2.png','images/tools/3.png']
+                            li.header-content-wrapper-cart-icons__item.header-content-wrapper-cart-icons-item
+                                img(src= icon, alt="icon")
+            .header-content-wrapper__contacts.header-content-wrapper-contacts
+                .header-content-wrapper-contacts__date.header-content-wrapper-contacts-date 
+                    .header-content-wrapper-contacts-date__description Время работы:
+                    .header-content-wrapper-contacts-date__text 10:00-19:00
+                .header-content-wrapper-contacts__phone
+                    a(href="tel:8 495 721-25-25") 8 495 721-25-25
+                .header-content-wrapper-contacts__footer.header-content-wrapper-contacts-footer
+                    .header-content-wrapper-contacts-footer__location Москва
+                    .header-content-wrapper-contacts-footer__change.header-content-wrapper-contacts-footer-change
+                        a(href="#").header-content-wrapper-contacts-footer-change__link Сменить
+
+
+
+    

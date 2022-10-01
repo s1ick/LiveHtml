@@ -1,0 +1,11 @@
+nav.main-menu
+    .main-menu__search
+        img(src="images/search.svg", alt="search")#search
+        input(type="text" placeholder="Введите текст")
+    .menu#menu
+        each  name in ['Перфораторы','Дрели','Шлифмашины','Пистолеты','Электропилы','Наборы инструментов','Акксесуары']
+            .menu__item.menu-item
+                a(href="#").menu-item__link
+                    =name
+    .main-menu__sale
+        a(href="#") Распродажа

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./styles/reset.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="./styles/style.css">
+      <script src="./js/main.js"></script>
+      <title>LiveHtml</title>
+    </head>
+    <main class="layout">
+      <section class="header">
+        <div class="header__logo header-logo"><img src="images/logo.svg" alt="logo"></div>
+        <div class="header__content header-content">
+          <header class="header-content__top header-content-top">
+            <ul class="header-content-top__list header-content-top-list">
+              <li class="header-content-top-list__item header-content-top-list-item"><a class="header-content-top-list-item__link" href="#">Каталог инструментов</a></li>
+              <li class="header-content-top-list__item header-content-top-list-item"><a class="header-content-top-list-item__link" href="#">Все для сада</a></li>
+              <li class="header-content-top-list__item header-content-top-list-item"><a class="header-content-top-list-item__link" href="#">Ручной интрумент</a></li>
+              <li class="header-content-top-list__item header-content-top-list-item"><a class="header-content-top-list-item__link" href="#">Электрика</a></li>
+              <li class="header-content-top-list__item header-content-top-list-item"><a class="header-content-top-list-item__link" href="#">Доставка</a></li>
+              <li class="header-content-top-list__item header-content-top-list-item"><a class="header-content-top-list-item__link" href="#">Оплата</a></li>
+              <li class="header-content-top-list__item header-content-top-list-item"><a class="header-content-top-list-item__link" href="#">О нас</a></li>
+            </ul>
+            <div class="header-content-top__auth header-content-top-auth"><a class="header-content-top-auth__login" href="#">Вход</a><span class="header-content-top-auth__line"></span><a class="header-content-top-auth__registration" href="#">Регистрация</a></div>
+          </header>
+          <div class="header-content__wrapper header-content-wrapper">
+            <div class="header-content-wrapper-ls">
+              <div class="header-content-wrapper__banner"><a href="#"><img src="https://dummyimage.com/253x70/e2e2e2/e2e2e2" alt="Banner"></a></div>
+              <div class="header-content-wrapper__cart header-content-wrapper-cart">
+                <ul class="header-content-wrapper-cart-list">
+                  <li class="header-content-wrapper-cart-list__item header-content-wrapper-cart-list-item"><img src="images/cart.svg" alt="3 шт. / 17 250 р."><span class="header-content-wrapper-cart-list-item__text">3 шт. / 17 250 р.</span></li>
+                  <li class="header-content-wrapper-cart-list__item header-content-wrapper-cart-list-item"><img src="images/star.svg" alt="Избранное (7)"><span class="header-content-wrapper-cart-list-item__text">Избранное (7)</span></li>
+                  <li class="header-content-wrapper-cart-list__item header-content-wrapper-cart-list-item"><img src="images/balance.svg" alt="К сравнению (5)"><span class="header-content-wrapper-cart-list-item__text">К сравнению (5)</span></li>
+                </ul>
+                <ul class="header-content-wrapper-cart-icons">
+                  <li class="header-content-wrapper-cart-icons__item header-content-wrapper-cart-icons-item"><img src="images/tools/1.png" alt="icon"></li>
+                  <li class="header-content-wrapper-cart-icons__item header-content-wrapper-cart-icons-item"><img src="images/tools/2.png" alt="icon"></li>
+                  <li class="header-content-wrapper-cart-icons__item header-content-wrapper-cart-icons-item"><img src="images/tools/3.png" alt="icon"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="header-content-wrapper__contacts header-content-wrapper-contacts">
+              <div class="header-content-wrapper-contacts__date header-content-wrapper-contacts-date"> 
+                <div class="header-content-wrapper-contacts-date__description">Время работы:</div>
+                <div class="header-content-wrapper-contacts-date__text">10:00-19:00</div>
+              </div>
+              <div class="header-content-wrapper-contacts__phone"><a href="tel:8 495 721-25-25">8 495 721-25-25</a></div>
+              <div class="header-content-wrapper-contacts__footer header-content-wrapper-contacts-footer">
+                <div class="header-content-wrapper-contacts-footer__location">Москва</div>
+                <div class="header-content-wrapper-contacts-footer__change header-content-wrapper-contacts-footer-change"><a class="header-content-wrapper-contacts-footer-change__link" href="#">Сменить</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <nav class="main-menu">
+        <div class="main-menu__search"><img src="images/search.svg" alt="search" id="search">
+          <input type="text" placeholder="Введите текст">
+        </div>
+        <div class="menu" id="menu">
+          <div class="menu__item menu-item"><a class="menu-item__link" href="#">Перфораторы</a></div>
+          <div class="menu__item menu-item"><a class="menu-item__link" href="#">Дрели</a></div>
+          <div class="menu__item menu-item"><a class="menu-item__link" href="#">Шлифмашины</a></div>
+          <div class="menu__item menu-item"><a class="menu-item__link" href="#">Пистолеты</a></div>
+          <div class="menu__item menu-item"><a class="menu-item__link" href="#">Электропилы</a></div>
+          <div class="menu__item menu-item"><a class="menu-item__link" href="#">Наборы инструментов</a></div>
+          <div class="menu__item menu-item"><a class="menu-item__link" href="#">Акксесуары</a></div>
+        </div>
+        <div class="main-menu__sale"><a href="#">Распродажа</a></div>
+      </nav>
+    </main>
+  </body>
+</html>
