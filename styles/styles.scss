@@ -203,16 +203,21 @@ input {
     justify-content: flex-start;
     align-items: flex-start;
 
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     cursor: pointer;
     &:hover {
         @extend .transitionOpacity;
+    }
+    &:nth-child(1) {
+        .header-content-wrapper-cart-list-item__text {
+            @include font(14px, 16px, 400);
+        }
     }
     &__text {
         white-space: nowrap;
         margin-left: 11px;
         text-decoration: underline;
-        @include font(14px, 16px, 400);
+        @include font(12px, 14px, 400);
         letter-spacing: -0.01em;
     }
     &:nth-child(2) {

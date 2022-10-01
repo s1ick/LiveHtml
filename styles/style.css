@@ -148,15 +148,19 @@ input {
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   cursor: pointer; }
+  .header-content-wrapper-cart-list-item:nth-child(1) .header-content-wrapper-cart-list-item__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px; }
   .header-content-wrapper-cart-list-item__text {
     white-space: nowrap;
     margin-left: 11px;
     text-decoration: underline;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
-    line-height: 16px;
+    line-height: 14px;
     letter-spacing: -0.01em; }
   .header-content-wrapper-cart-list-item:nth-child(2) img {
     margin-left: 5px; }
