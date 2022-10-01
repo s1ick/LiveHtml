@@ -1,10 +1,10 @@
 # LiveHtml
-test task for LiveHtml
+**Test task for LiveHtml**
 
-html layout HEADER with pug and scss
+## Html layout HEADER with PUG and SCSS
 
-for edit scss
-  sass --watch styles.scss:style.css
-  
-for run pug
-  pug index.pug --pretty -w
+**For edit scss**
+`sass --watch styles.scss:style.css`
+
+**For run pug**
+`pug index.pug --pretty -w`
